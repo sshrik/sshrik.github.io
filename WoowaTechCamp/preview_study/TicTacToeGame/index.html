@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Woowahan Tech Camp Tic Tac Toe Web Game </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="script.js"> </script>
+    </head>
+    <body>
+        <p class="bold-font font-size48" id="title">TIC TAC TOE GAME</p>
+        <div id="score-board-container">
+            <div id="brown-team-score-container">
+                <p class="bold-font font-size60" id="brown-team-score">0</p>
+                <div class="div-ball" id="brown-turn"></div>
+            </div>
+            <div>
+                <p class="bold-font font-size60">:</p>
+                <div class="div-ball non-visible"></div>
+            </div>
+            <div id="green-team-score-container">
+                <p class="bold-font font-size60" id="green-team-score">0</p>
+                <div class="div-ball non-visible" id="green-turn"></div>
+            </div>
+        </div>
+        <div id="game-board">
+            <div class="board-line vertical-line"></div>
+            <div class="board-line vertical-line"></div>
+            <div class="board-line horizontal-line"></div>
+            <div class="board-line horizontal-line"></div>
+            <div class="board-horizontal">
+                <div class="pressable-board" id="board01"></div>
+                <div class="pressable-board" id="board02"></div>
+                <div class="pressable-board" id="board03"></div>
+            </div>
+            <div class="board-horizontal">
+                <div class="pressable-board" id="board04"></div>
+                <div class="pressable-board" id="board05"></div>
+                <div class="pressable-board" id="board06"></div>
+            </div>
+            <div class="board-horizontal">
+                <div class="pressable-board" id="board07"></div>
+                <div class="pressable-board" id="board08"></div>
+                <div class="pressable-board" id="board09"></div>
+            </div>
+            <div id="game-btn-container">
+                <button id="new-game-btn" onclick="newGame()">
+                    <div class="div-ball orange-ball"></div>
+                    <p>New Game</p>
+                </button>
+                <button id="reset-game-btn" onclick="init()">
+                    <div class="div-ball orange-ball"></div>
+                    <p>Reset Game</p>
+                </button>
+            </div>
+        </div>
+        <p id="copyright-text">ⓒCopyright for GuiGoGiraffe</p>
+    </body>
+</html>
